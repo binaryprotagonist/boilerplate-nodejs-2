@@ -1,0 +1,13 @@
+File Structure of Nodejs Application
+
+1] app.js:- This file starts your web server. All your set up logic should be in this file.
+
+2] config.js:- Environment variables and configuration related stuff e.g. PORT number, secrets, keys etc. Do not commit this file to Git.
+
+3] components :- In this folder it contains all the components of project. And inside every component folder their should be 4 files-
+		a] controller -: This file contains all the business logic of its respective components.
+		b] dal -: In this file we write functions which used in our project and export them. And then we import this function as per need.
+		c] model -: All the models related to its component should be write in this file.
+		d] router -: All routing related logic realted to its component must be inside this file.
+
+4] db.js :- This file contain the connection of database.
